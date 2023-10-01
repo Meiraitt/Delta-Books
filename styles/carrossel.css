@@ -1,0 +1,199 @@
+.carrossel {
+    z-index: 1;
+}
+
+.carrossel__titulo {
+    color: var(--cor-amarela);
+    font-family: var(--fonte);
+    font-size: 1.12rem;
+    font-weight: 700;
+    background-color: var(--cor-branca);
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    text-transform: uppercase;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    padding: 5%;
+    background-color: var(--cor-branca);
+    margin: 1.25rem 1.5rem;
+    border-radius: 0.62rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao__titulo {
+    font-family: var(--fonte);
+    font-size: 1rem;
+    color: var(--cor-amarela);
+    font-weight: 700;
+    margin-bottom: 0.56rem;
+    width: 11.18rem;
+}
+
+.descricao__titulo-dois {
+    font-family: var(--fonte);
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: #002F52;
+    margin-bottom: 0.56rem;
+    width: 8.93rem;
+}
+
+.descricao__paragrafo {
+    font-family: var(--fonte);
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    width: 9.25rem;
+    height: 4.06rem;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    gap: 0.62rem;
+    align-items: center;
+}
+
+.card__saibamais {
+    display: flex;
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    background: var(--cor-amarela);
+    color: var(--cor-branca);
+    width: 10.06rem;
+    height: 3rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.descricao__estrelas {
+    margin-bottom: 0.56rem;
+}
+
+@media screen and (min-width: 900px) {
+    .carrossel__titulo {
+        font-size: 1.62rem;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0em 3em 0em;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        margin: 1.87rem 10% 3rem 20%;
+        padding: 0;
+        width: 36.25rem;
+        height: 16.62rem;
+        justify-content: center;
+    }
+
+    .card__descricao {
+        padding: 1.43rem 0rem 0rem 1rem;
+    }
+
+    .descricao__titulo {
+        width: auto;
+    }
+
+    .card__botoes {
+        margin-left: 1rem;
+    }
+
+    .card__imagem {
+        padding: 0rem 1.43rem 0rem 0rem;
+    }
+
+    .card__saibamais {
+        margin: 0.75rem 1.43rem 1.37rem 0rem;
+    }
+
+    .descricao__titulo-dois {
+        width: auto;
+        margin: 0.62rem 0rem;
+    }
+
+    .descricao__paragrafo {
+        width: 89%;
+        font-size: 1rem;
+    }
+
+    .card__descricao {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    .carrossel__titulo {
+        font-size: 2rem
+    }
+    
+    .corrossel__container {
+        display: flex;
+    }
+
+    .swiper {
+        margin-left: 6.25rem;
+        width: 60%;
+        margin-bottom: 1em;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0em;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+        top: 40%;
+    }
+
+    .card {
+        margin: 0;
+        width: 40%;
+        height: 18.75rem;
+        margin: 2.8rem 6.25rem 0rem 2.87rem;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+    }
+    
+    .descricao__paragrafo {
+        font-size: 1rem;
+    }
+}

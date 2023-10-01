@@ -1,0 +1,119 @@
+.topicos {
+    background: var(--cor-azul);
+}
+
+.topicos__titulo {
+    text-align: center;
+    color: var(--cor-branca);
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos__link {
+    margin: 2em 0.5em;
+}
+
+.topicos__link__links {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-family: var(--fonte);
+    font-size: 0.87rem;
+    font-weight: 700;
+    background-color: var(--cor-amarela);
+    padding: 1rem 1.5rem;
+}
+
+.contato {
+    background-color: var(--cor-branca);
+    font-family: var(--fonte);
+    padding: 1.5rem;
+}
+
+.contato__titulo {
+    font-size: 1.12rem;
+    font-weight: 500;
+    background: var(--cor-azul);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contato__texto {
+    font-size: 1rem;
+    font-weight: 300;
+    background: var(--cor-azul);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contato__email {
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--cor-azul);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 1.5rem;
+    padding: 0.62rem 1.5rem;
+    border: 1px solid #002F52;
+    height: 2.75rem;
+    width: 23.75rem;
+}
+
+.contato__email::placeholder {
+    background: url('../assets/Email.svg');
+    background-repeat: no-repeat;
+    padding-left: 2em;
+}
+
+@media screen and (min-width: 900px) {
+    .topicos__titulo {
+    font-size: 1.5rem;
+    }
+
+    .topicos__link__links {
+        font-size: 1.5rem;
+    }
+
+    .contato {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato__titulo {
+        margin-bottom: 1.18rem;
+        font-size: 1.5rem;
+        width: 23.5rem;
+    }
+
+    .contato__texto {
+        width: 22.06rem;
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    .topicos {
+        padding: 1.5em 25vw;
+    }
+
+    .contato {
+        padding: 2.5em 20vw;
+    }
+
+    .contato__email {
+        margin-top: 0.93rem;
+    }
+}
